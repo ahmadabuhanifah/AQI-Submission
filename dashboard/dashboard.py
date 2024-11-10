@@ -6,7 +6,7 @@ import streamlit as st
 sns.set(style='dark')
 
 
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 all_df.sort_values(by="datetime", inplace=True)
 all_df['wd'] = 'Mean'
 rain_index = all_df.columns.get_loc('RAIN')
